@@ -1,0 +1,70 @@
+em {
+	font-style:normal;
+	font-weight:600;
+	color: #e9463c;
+}
+
+h2 {
+	margin-top:40px;
+	font-size:1.2em;
+	font-weight:600;
+}
+
+.step {
+	font-size:36px;
+}
+
+#title h1 {
+	border-top: solid 2px #e9463c;
+	border-bottom: solid 2px #e9463c;
+	text-transform: uppercase;
+	text-align:left;
+	font-size:124px;
+	line-height:1em;
+}
+
+#title h1 .article {
+	display:inline-block;
+	font-size:50%;
+}
+#title h1 .adj {
+	display:inline-block;
+	padding-top:30px;
+	font-size:140%;
+	color: #e9463c;
+}
+#title h1 .noun {
+	display:inline-block;
+	font-size:50%;
+	padding-bottom:30px;
+}
+
+#title .subtitle {
+	text-align:right;
+	padding-top:15px;
+}
+
+#jargon li {
+	margin-left:120px;
+	padding:40px;
+}
+#jargon li.scm {
+	position:relative;
+	left:24px;
+}
+#jargon li:before {
+	font-family: 'FontAwesome';
+	font-size: 1.3em;
+	position:relative;
+	text-align:left;
+	top:5px;
+	padding-right:30px;
+}
+
+#jargon li.ftp:before {
+	content:'\F0EE';
+}
+#jargon li.scm:before {
+	content:'\F126';
+	left:-12px;
+}

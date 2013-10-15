@@ -6,26 +6,18 @@
 		<title>The Big Red Button: Stress Free WordPress Deployment</title>
 		<meta name="author" content="Jonathan D. Johnson">
 		<meta name="description" content="The Big Red Button: Stress Free WordPress Deployment">
-		<script src="lib/impressjs/css/impress-demo.css"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="steps.css">
 		<link href="http://fonts.googleapis.com/css?family=Telex" rel="stylesheet">
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="canonical" href="h">
 	</head>
 	<body class="impress-not-supported">
-		<div id="fallback-message">
-			You must be either using a mobile browser or an ancient one!<br />
-			If the latter, I sincerely suggest you come back in <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>.
+		<div class="fallback-message">
+			Your browser doesn't appear to support impress js, I sincerely suggest you come back in <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>.
 		</div>
-		<div id="hint">
-			<p>Use spacebar, arrow keys or page up / down to navigate</p>
-		</div>
-		<script>
-			if ('ontouchstart' in document.documentElement) {
-				document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
-			}
-		</script>
 		<div id="impress">
-			<div id="title" data-z='500' data-rotate='60' data-rotate-x='-15' data-rotate-y='15' data-scale='1' class="step">
+			<div id="title" data-x='1000' data-y='1000' data-z='1000' data-rotate='60' data-rotate-x='-15' data-rotate-y='15' data-scale='1' class="step">
 				<h1>
 					<span class="article">The</span><br />
 					<span class="adj">Big Red</span><br />
@@ -33,19 +25,25 @@
 				</h1>
 				<div class="subtitle">Stress Free WordPress Deployment</div>
 			</div>
-			<div id="impact" data-x='-600' data-y='0' data-rotate='90' data-scale='0.25' class="step">
+			<div id="jargon" data-x='0' data-y='0' data-rotate='90' data-scale='0.25' class="step">
 				<p>A <em>deployment</em> is the process of moving code updates into your production environment.</p>
 
-				<p>Common deployment strategies include</p>
+				<h2>Common deployment strategies include</h2>
 				<ul>
-					<li>Uploading Files via FTP</li>
-					<li>Pulling changes via Source Control</li>
+					<li class="ftp">Uploading Files via FTP</li>
+					<li class="scm">Pulling changes via Source Control</li>
 				</ul>
 			</div>
 
 		</div>
+		<div class="hint">
+			<p>Use spacebar, arrow keys or page up / down to navigate</p>
+		</div>
 		<script src="lib/impressjs/js/impress.js"></script>
 		<script>
+			if ('ontouchstart' in document.documentElement) {
+				document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
+			}
 			impress().init();
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 			(function() {

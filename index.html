@@ -6,9 +6,10 @@
 		<title>The Big Red Button: Stress Free WordPress Deployment</title>
 		<meta name="author" content="Jonathan D. Johnson">
 		<meta name="description" content="The Big Red Button: Stress Free WordPress Deployment">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Telex">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="steps.css">
-		<link href="http://fonts.googleapis.com/css?family=Telex" rel="stylesheet">
 		<link rel="shortcut icon" href="favicon.png">
 		<link rel="canonical" href="h">
 	</head>
@@ -17,7 +18,7 @@
 			Your browser doesn't appear to support impress js, I sincerely suggest you come back in <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>.
 		</div>
 		<div id="impress">
-			<div id="title" data-x='1000' data-y='1000' data-z='1000' data-rotate='60' data-rotate-x='-15' data-rotate-y='15' data-scale='1' class="step">
+			<div id="title" data-x="2000" data-y="1000" data-z="1000" data-rotate="60" data-rotate-x="-15" data-rotate-y="15" data-scale="2" class="step">
 				<h1>
 					<span class="article">The</span><br />
 					<span class="adj">Big Red</span><br />
@@ -25,7 +26,7 @@
 				</h1>
 				<div class="subtitle">Stress Free WordPress Deployment</div>
 			</div>
-			<div id="jargon" data-x='0' data-y='0' data-rotate='90' data-scale='0.25' class="step">
+			<div id="jargon" data-x="0" data-y="0" data-rotate="90" class="step">
 				<p>A <em>deployment</em> is the process of moving code updates into your production environment.</p>
 
 				<h2>Common deployment strategies include</h2>
@@ -33,6 +34,20 @@
 					<li class="ftp">Uploading Files via FTP</li>
 					<li class="scm">Pulling changes via Source Control</li>
 				</ul>
+			</div>
+
+			<div id="ftpdeploy-1" data-x="0" data-y="1280" data-rotate="90" data-rotate-y="-45" class="step deploy">
+				<div class="fa start">&#xF108;</div>
+				<div class="inner">
+					<div class="fa ftpwindow">&#xF0DB;</div>
+				</div>
+			</div>
+
+			<div id="capdeploy-1" data-x="0" data-y="2560" data-rotate="90" data-rotate-y="-45" class="step deploy">
+				<div class="fa start">&#xF108;</div>
+				<div class="inner">
+					<code>$> cap deploy</code>
+				</div>
 			</div>
 
 		</div>

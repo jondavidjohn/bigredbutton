@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<title>The Big Red Button: Stress Free WordPress Deployment</title>
+		<meta name="author" content="Jonathan D. Johnson">
+		<meta name="description" content="The Big Red Button: Stress Free WordPress Deployment">
+		<script src="lib/impressjs/css/impress-demo.css"></script>
+		<link href="http://fonts.googleapis.com/css?family=Telex" rel="stylesheet">
+		<link rel="shortcut icon" href="favicon.png">
+		<link rel="canonical" href="h">
+	</head>
+	<body class="impress-not-supported">
+		<div id="fallback-message">
+			You must be either using a mobile browser or an ancient one!<br />
+			If the latter, I sincerely suggest you come back in <a href="http://www.google.com/chrome/" target="_blank">Chrome</a>.
+		</div>
+		<div id="hint">
+			<p>Use spacebar, arrow keys or page up / down to navigate</p>
+		</div>
+		<script>
+			if ('ontouchstart' in document.documentElement) {
+				document.querySelector('.hint').innerHTML = '<p>Tap on the left or right to navigate</p>';
+			}
+		</script>
+		<div id="impress">
+			<div id="title" data-z='500' data-rotate='60' data-rotate-x='-15' data-rotate-y='15' data-scale='1' class="step">
+				<h1>
+					<span class="article">The</span><br />
+					<span class="adj">Big Red</span><br />
+					<span class="noun">Button</span>
+				</h1>
+				<div class="subtitle">Stress Free WordPress Deployment</div>
+			</div>
+			<div id="impact" data-x='-600' data-y='0' data-rotate='90' data-scale='0.25' class="step">
+				<p>A <em>deployment</em> is the process of moving code updates into your production environment.</p>
+
+				<p>Common deployment strategies include</p>
+				<ul>
+					<li>Uploading Files via FTP</li>
+					<li>Pulling changes via Source Control</li>
+				</ul>
+			</div>
+
+		</div>
+		<script src="lib/impressjs/js/impress.js"></script>
+		<script>
+			impress().init();
+			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+			(function() {
+			  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			  po.src = 'https://apis.google.com/js/plusone.js';
+			  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			})();
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', '']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+			  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+			window.addEventListener('hashchange', function() {
+			  _gaq.push(['_trackEvent', 'Step', 'move', window.location.hash]);
+}, false);
+		</script>
+	</body>
+</html>

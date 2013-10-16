@@ -83,15 +83,21 @@ h2 {
 	left: 300px;
 	font-size: 640px;
 	color:#BBB;
-	transform: scale(1,2);
-	-webkit-transform: scale(1.5,1);
-	-moz-transform: scale(1.5,1);
+	transform: scale(1.5, 1.1);
+	-webkit-transform: scale(1.5,1.1);
+	-moz-transform: scale(1.5,1.1);
 }
 
 .deploy .inner {
 	position: absolute;
 	top: -190px;
 	left: 211px;
+}
+
+.deploy .inner p {
+	padding-left: 370px;
+	padding-right: 210px;
+	padding-top: 30px;
 }
 
 .deploy .inner .ftpwindow {

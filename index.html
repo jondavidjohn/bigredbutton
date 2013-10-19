@@ -26,7 +26,8 @@
 				</h1>
 				<div class="subtitle">Stress Free WordPress Deployment</div>
 			</div>
-			<div id="jargon" data-x="0" data-y="-50" data-rotate="90" class="step">
+
+			<div id="jargon" data-x="0" data-y="-1330" data-rotate="90" class="step">
 				<p>A <em>deployment</em> is the process of moving code updates into your production environment.</p>
 
 				<h2>Common deployment strategies include</h2>
@@ -34,6 +35,10 @@
 					<li class="ftp">Uploading Files via FTP</li>
 					<li class="scm">Pulling changes via Source Control</li>
 				</ul>
+			</div>
+
+			<div id="redbutton" data-x="0" data-y="-50" data-rotate="90" class="step">
+
 			</div>
 
 			<div id="ftpdeploy-1" data-x="0" data-y="1280" data-rotate="90" data-rotate-y="-45" class="step deploy">
@@ -61,13 +66,13 @@
 				<h2>Stressors</h2>
 				<ul>
 					<li>Did I test these changes thoroughly enough?</li>
-					<li>Did I follow the deployment checklist perfectly? <em>(no, in fact you didn't)</em></li>
+					<li>Did I follow the deployment checklist perfectly? <br><em>(no, in fact you didn't)</em></li>
 				</ul>
 			</div>
 
 			<div id="ftpdeploy-4" data-x="2400" data-y="1280" data-rotate="90" data-rotate-y="-45" class="step deploy">
 				<p>You release the files.</p>
-				<p>One by one, each file is transferred into place sequentially.</p>
+				<p><em>One by one</em>, each file is transferred into place <em>sequentially</em>.</p>
 
 				<h2>Stressors</h2>
 				<ul>
@@ -76,10 +81,56 @@
 				</ul>
 			</div>
 
-			<div id="ftpdeploy-5" data-x="3000" data-y="1280" data-rotate="90" data-rotate-y="-45" class="step deploy">
+			<div id="ftpdeploy-5" data-x="3000" data-y="1280" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+				<div class="fa cloud">&#xF0C2;</div>
+				<div class="fa smile">&#xF118;</div>
 			</div>
 
-			<div id="capdeploy-1" data-x="0" data-y="2560" data-rotate="90" data-rotate-y="-45" class="step deploy">
+			<div id="ftpdeploy-6" data-x="3000" data-y="1280" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+				<div class="fa cloud">&#xF0C2;</div>
+				<div class="fa smile frown">&#xF119;</div>
+			</div>
+
+			<div id="ftpdeploy-revert" data-x="3000" data-y="3000" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+				<p>What to do now?</p>
+				<ul>
+					<li>Did you know which files you updated so you can revert them?</li>
+					<li>Better yet, did you make backups of all the files you updated?</li>
+					<li>Do you revert to editing files in production?</li>
+				</ul>
+			</div>
+
+			<div id="ftpdeploy-revert-2" data-x="2400" data-y="3000" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+				<p>Going forward, how do you minimize the risk?</p>
+				<ul>
+					<li>Make a checklist? or add to it?</li>
+					<li>Push code out less often? only in the middle of the night?</li>
+					<li><em>"My bad, I'll try really hard not to make that mistake again."</em></li>
+				</ul>
+			</div>
+
+			<div id="ftpdeploy-revert-3" data-x="1600" data-y="3000" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+				<blockquote>
+					Lets plan for a future where we're all just as stupid as we are today.
+					<cite>Dan Milstein (<a href="http://twitter.com/danmil">@danmil</a>)</cite>
+				</blockquote>
+			</div>
+
+			<div id="ftpdeploy-revert-4" align="center" data-x="800" data-y="3000" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+				<img src="img/aatt.jpg" align="center"/>
+				<p>We're programmers, <em>professional automators</em>.</p>
+				<p>We can do better.</p>
+			</div>
+
+			<div id="ftpdeploy-revert-5" data-x="0" data-y="3000" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+				<h2>capistrano</h2>
+				<p>An open source tool for running scripts on one or more remote servers simultaneously.  It's primary use is deploying websites.</p>
+				<h2>capistrano-wp</h2>
+				<p>A capistrano plugin used for deploying WordPress specifically.</p>
+			</div>
+
+
+			<div id="capdeploy-1" data-x="0" data-y="4370" data-rotate="90" data-rotate-y="-45" class="step deploy">
 				<div class="fa start">&#xF108;</div>
 				<div class="inner">
 					<code>$> cap deploy</code>

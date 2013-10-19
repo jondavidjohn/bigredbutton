@@ -3,11 +3,38 @@ em {
 	font-weight:600;
 	color: #e9463c;
 }
+blockquote {
+	text-align:right;
+}
+blockquote cite:before {
+	color: #aaa;
+	content: '- ';
+	font-size:32px;
+	position:relative;
+	top:2px;
+}
+blockquote cite {
+	text-align:right;
+	display: block;
+	padding-top: 35px;
+	font-size:30px;
+}
+blockquote:before {
+	color: #aaa;
+	content: '\201C';
+	font-size:82px;
+}
 
 h2 {
 	margin-top:40px;
 	font-size:1.2em;
 	font-weight:600;
+}
+
+ul li {
+	list-style: square;
+	margin-left:100px;
+	padding-top:30px;
 }
 
 .step {
@@ -51,6 +78,7 @@ h2 {
 #jargon li {
 	margin-left:120px;
 	padding:40px;
+	list-style:none;
 }
 #jargon li.scm {
 	position:relative;
@@ -106,3 +134,35 @@ h2 {
 	left: 100px;
 	top: -52px;
 }
+
+.deploy.last .cloud {
+	position: absolute;
+	top: -400px;
+	left: 300px;
+	font-size: 640px;
+	color:#BBB;
+}
+
+.deploy.last .smile {
+	position: absolute;
+	top: -170px;
+	left: 460px;
+	font-size: 360px;
+	color:#099C43;
+	opacity:0;
+	transition: opacity 1s ease-in-out;
+	transition-delay: 1s;
+	-moz-transition: opacity 1s ease-in-out;
+	-moz-transition-delay: 1s;
+	-webkit-transition: opacity 1s ease-in-out;
+	-webkit-transition-delay: 1s;
+}
+
+.deploy.last.active .smile {
+	opacity:1;
+}
+
+.deploy.last .smile.frown {
+	color:#e9463c;
+}
+

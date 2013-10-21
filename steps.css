@@ -25,6 +25,8 @@ blockquote:before {
 	font-size:82px;
 }
 
+.step.rollback { opacity:0; }
+
 h2 {
 	margin-top:40px;
 	font-size:1.2em;

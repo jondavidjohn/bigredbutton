@@ -26,6 +26,7 @@ blockquote:before {
 }
 
 .step.rollback { opacity:0; }
+.step.cap-diagram { opacity:0; }
 
 .step p { margin-top:30px; }
 
@@ -222,7 +223,14 @@ ul li {
 	-webkit-transform: rotate(36deg);
 }
 
-.deploy.cap-diagram .lines div.current {
+.deploy.cap-diagram .lines div.current-1 {
+	top: 6px;
+	left: 703px;
+	width: 252px;
+	-webkit-transform: rotate(-8deg);
+}
+
+.deploy.cap-diagram .lines div.current-2 {
 	top: 97px;
 	left: 667px;
 	width: 324px;

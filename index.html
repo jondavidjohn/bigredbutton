@@ -96,7 +96,7 @@
 				<ul>
 					<li>Did you know which files you updated so you can revert them?</li>
 					<li>Better yet, did you make backups of all the files you updated?</li>
-					<li>Do you revert to editing files in production?</li>
+					<li>Do you resort to editing files in production?</li>
 				</ul>
 			</div>
 
@@ -126,7 +126,7 @@
 				<h2><a href="https://github.com/capistrano/capistrano/wiki/2.x-Getting-Started">capistrano</a></h2>
 				<p>An open source tool for running scripts on one or more remote servers simultaneously.  It's primary use is deploying websites.</p>
 				<h2><a href="https://github.com/crowdfavorite/gem-capistrano-wp">capistrano-wp</a></h2>
-				<p>A capistrano plugin used for deploying WordPress specifically.</p>
+				<p>A Capistrano plugin used for deploying WordPress specifically.</p>
 			</div>
 
 
@@ -154,11 +154,83 @@
 				</div>
 			</div>
 
-			<div id="capdeploy-2" data-x="3000" data-y="4370" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+			<div id="capdeploy-5" data-x="3000" data-y="4370" data-rotate="90" data-rotate-y="-45" class="step deploy last">
 				<div class="fa cloud">&#xF0C2;</div>
 				<div class="fa smile">&#xF118;</div>
 			</div>
 
+			<div id="how-cap-works" data-x="3000" data-y="6090" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+				<h2>How it works <small> ( high level ) </small></h2>
+				<p>
+					Capistrano runs bash commands remotely via an SSH connection on one or more remote servers.  These commands
+					comprise a set of recipies that have been battle hardened to provide a reliable and repeatable process
+					to confidently deploy your web site or application
+				</p>
+			</div>
+
+			<div id="how-cap-works-2" data-x="3000" data-y="7810" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+				<h2>Releases</h2>
+				<p>
+					A <em>release</em> is the result of a Capistrano deployment, the resulting webroot containing your
+					project and it's latest changes.
+				</p>
+				<p>
+					Capistrano builds up a new release directory for
+					every deployment and retains a defined number of previous
+					releases, each with their own self contained directories.;
+				</p>
+			</div>
+
+			<div id="how-cap-works-3" data-x="3000" data-y="9530" data-rotate="90" data-rotate-y="-45" class="step deploy last">
+				<h2>Symlinks</h2>
+				<p>Capistrano uses the power of symlinks maintain directory structures that need to be shared accross all releases.</p>
+				<p>It also uses a symlink to specify the current release.</p>
+			</div>
+
+			<div id="how-cap-works-4" data-x="3000" data-y="11250" data-rotate="90" data-rotate-y="-45" class="step deploy cap-diagram">
+				<div class="shared">
+					<h2>shared</h2>
+					<ul>
+						<li>&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</li>
+					</ul>
+				</div>
+				<div class="releases">
+					<h2>releases</h2>
+					<div class="release">
+						<h3>201308291323</h4>
+						<ul>
+							<li>&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</li>
+							<li class="symlink">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</li>
+							<li>&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</li>
+						</ul>
+					</div>
+					<div class="release">
+						<h3>201310292312</h4>
+						<ul>
+							<li>&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</li>
+							<li class="symlink">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</li>
+							<li>&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</li>
+						</ul>
+					</div>
+					<div class="release">
+						<h3>201311030421</h4>
+						<ul>
+							<li>&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</li>
+							<li class="symlink">&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</li>
+							<li>&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;&#9608;</li>
+						</ul>
+					</div>
+				</div>
+				<div class="www">
+					<h2>www</h2>
+				</div>
+				<div class="lines">
+					<div class="shared-release-1"></div>
+					<div class="shared-release-2"></div>
+					<div class="shared-release-3"></div>
+					<div class="current"></div>
+				</div>
+			</div>
 		</div>
 		<div class="hint">
 			<p>Use spacebar, arrow keys or page up / down to navigate</p>

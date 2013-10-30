@@ -27,6 +27,12 @@ blockquote:before {
 
 .step.rollback { opacity:0; }
 
+.step p { margin-top:30px; }
+
+small {
+	font-size: 0.5em;
+}
+
 h2 {
 	margin-top:40px;
 	font-size:1.2em;
@@ -168,3 +174,86 @@ ul li {
 	color:#e9463c;
 }
 
+.deploy.cap-diagram {
+	position:relative;
+}
+
+.deploy.cap-diagram > div {
+	position:absolute;
+}
+.deploy.cap-diagram > div h2 {
+	border-bottom:solid 5px;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+
+.deploy.cap-diagram .shared {
+	top:-300px;
+	left:0px;
+}
+.deploy.cap-diagram .shared li {
+	padding-top:70px;
+	font-size:18px;
+}
+
+.deploy.cap-diagram .lines div {
+	position:absolute;
+	height:1px;
+	border-top:dashed 5px #e9463c;
+}
+
+.deploy.cap-diagram .lines div.shared-release-1 {
+	top: -110px;
+	left: 200px;
+	width: 260px;
+	-webkit-transform: rotate(12deg);
+}
+
+.deploy.cap-diagram .lines div.shared-release-2 {
+	top: 80px;
+	width: 545px;
+	-webkit-transform: rotate(47deg);
+}
+
+.deploy.cap-diagram .lines div.shared-release-3 {
+	top: -11px;
+	left: 134px;
+	width: 360px;
+	-webkit-transform: rotate(36deg);
+}
+
+.deploy.cap-diagram .lines div.current {
+	top: 97px;
+	left: 667px;
+	width: 324px;
+	-webkit-transform: rotate(-40deg);
+}
+
+.deploy.cap-diagram .releases {
+	top:-300px;
+	left:450px;
+}
+.deploy.cap-diagram .releases .release {
+	padding-left:30px;
+	padding-top:40px;
+}
+.deploy.cap-diagram li.symlink {
+	color:#e9463c;
+}
+.deploy.cap-diagram li {
+	padding:0px;
+	padding-top:10px;
+	padding-left:30px;
+	margin:0px;
+	font-size: 13px;
+	list-style:none;
+}
+
+.deploy.cap-diagram .www {
+	top:-50px;
+	left:1000px;
+}
+.deploy.cap-diagram .www h2 {
+	border:none;
+	color:#e9463c;
+}

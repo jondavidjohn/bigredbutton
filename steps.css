@@ -1,3 +1,17 @@
+pre {
+	display:block;
+	color:#DDD;
+	background-color:#555;
+	padding:15px;
+	font-family:monospace;
+	margin-top:30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+code {
+	font-family:monospace;
+}
 em {
 	font-style:normal;
 	font-weight:600;
@@ -82,6 +96,31 @@ ul li {
 #title .subtitle {
 	text-align:right;
 	padding-top:15px;
+}
+
+#author .avatar {
+	display: block;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	height: 250px;
+	width: 250px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-image: url('http://jondavidjohn.com/content/themes/jdjcom/assets/img/profile.jpg');
+	background-size: 250px 250px;
+}
+
+#author .left {
+	width:400px;
+	padding-bottom:100px;
+	float:left;
+}
+#author .right {
+	width:700px;
+	float:right;
+	margin-top:50px;
 }
 
 #jargon li {
@@ -225,16 +264,16 @@ ul li {
 
 .deploy.cap-diagram .lines div.current-1 {
 	top: 6px;
-	left: 703px;
-	width: 252px;
+	left: 710px;
+	width: 247px;
 	-webkit-transform: rotate(-8deg);
 }
 
 .deploy.cap-diagram .lines div.current-2 {
 	top: 97px;
-	left: 667px;
-	width: 324px;
-	-webkit-transform: rotate(-40deg);
+	left: 674px;
+	width: 322px;
+	-webkit-transform: rotate(-42deg);
 }
 
 .deploy.cap-diagram .releases {

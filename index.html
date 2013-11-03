@@ -31,16 +31,16 @@
 				<div class="left">
 					<div class="avatar"></div>
 					<ul>
-						<li>jondavidjohn</li>
-						<li>jondavidjohn</li>
-						<li>jonathanjohnson</li>
-						<li>jondavidjohn.com</li>
+						<li class="twitter"><a href="https://twitter.com/jondavidjohn">jondavidjohn</a></li>
+						<li class="github"><a href="https://github.com/jondavidjohn">jondavidjohn</a></li>
+						<li class="stackoverflow"><a href="http://careers.stackoverflow.com/jonathanjohnson">jondavidjohn</a></li>
+						<li class="link"><a href="http://jondavidjohn.com">jondavidjohn.com</a></li>
 					</ul>
 				</div>
 				<div class="right">
 					<h2>Jonathan D. Johnson</h2>
 					<p>I am a Developer and Operations Engineer that is in love with building, learning, and teaching.</p>
-					<p>I current help build things and automate processes at <a href="http://crowdfavorite.com/" alt="Crowd Favorite" title="Crowd Favorite">Crowd Favorite</a></p>
+					<p>I help build things and automate processes at <a href="http://crowdfavorite.com/" alt="Crowd Favorite" title="Crowd Favorite">Crowd Favorite</a></p>
 				</div>
 			</div>
 
@@ -52,10 +52,6 @@
 					<li class="ftp">Uploading Files via FTP</li>
 					<li class="scm">Pulling changes via Source Control</li>
 				</ul>
-			</div>
-
-			<div id="redbutton" data-x="0" data-y="-50" data-rotate="90" class="step">
-
 			</div>
 
 			<div id="ftpdeploy-1" data-x="0" data-y="1280" data-rotate="90" data-rotate-y="-45" class="step deploy">
@@ -78,7 +74,6 @@
 
 			<div id="ftpdeploy-3" data-x="1600" data-y="1280" data-rotate="90" data-rotate-y="-45" class="step deploy">
 				<p>You drag them over the server window of your FTP client.</p>
-				<small>The cold sweat starts to set in...</small>
 
 				<h2>Stressors</h2>
 				<ul>
@@ -177,7 +172,7 @@
 			</div>
 
 			<div id="how-cap-works" data-x="3000" data-y="6090" data-rotate="90" data-rotate-y="-45" class="step deploy last">
-				<h2>How it works <small> ( high level ) </small></h2>
+				<h2>How it works</h2>
 				<p>
 					Capistrano runs bash commands remotely via an SSH connection on one or more remote servers.  These commands
 					comprise a set of recipies that have been battle hardened to provide a reliable and repeatable process
@@ -346,7 +341,7 @@
 			<div id="requirements" data-x="600" data-y="11250" data-rotate="90" data-rotate-y="-45" class="step deploy">
 				<h2>Requirements</h2>
 				<ul>
-					<li>SSH Access to yoru Hosting Environment</li>
+					<li>SSH Access to your Hosting Environment</li>
 					<li>Usage of a Version Control System (subversion, git, etc..)</li>
 					<li>Your repository root should correspond to your webroot</li>
 				</ul>
@@ -362,7 +357,7 @@
 				<h2>Setting up a project</h2>
 				<pre>cd path/to/project
 capify-wp .</pre>
-				<p>This will create a group of config files under the <code>config/</code> directory.</p>
+				<p>This will create a <code>Capfile</code> and a group of config files under the <code>config/</code> directory.</p>
 				<p>There are a few items in these files that will need to be modified for your project and deployment targets.</p>
 				<p>These files should be commited to version control.</p>
 			</div>
@@ -371,11 +366,15 @@ capify-wp .</pre>
 				<img src="img/demo.gif" alt="demo" />
 			</div>
 			<div id="conclusion" data-x="600" data-y="18130" data-rotate="90" data-rotate-y="-45" class="step deploy">
-				<h2>Broad takeaways</h2>
+				<h2>Takeaways</h2>
 				<ul>
-					<li>Automation is also about accessibility</li>
 					<li>Don't accept broken processes</li>
+					<li>Automation can help solidify and communicate processes</li>
+					<li>Automation is also about accessibility</li>
 				</ul>
+			</div>
+			<div id="credits" data-x="-4000" data-y="8130" data-rotate="90" data-rotate-y="-45" data-scale="15" class="step">
+				<p>jondavidjohn.com/wcden13</p>
 			</div>
 		</div>
 		<div class="hint">

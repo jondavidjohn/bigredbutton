@@ -76,6 +76,11 @@ ul li {
 	font-size:124px;
 	line-height:1em;
 }
+#credits {
+	border-top: solid 2px #e9463c;
+	border-bottom: solid 2px #e9463c;
+	text-align:center;
+}
 
 #title h1 .article {
 	display:inline-block;
@@ -120,7 +125,32 @@ ul li {
 #author .right {
 	width:700px;
 	float:right;
-	margin-top:50px;
+	margin-top:95px;
+}
+#author ul {
+	margin-left:-30px;
+}
+#author li a { color: #777; }
+#author li {
+	list-style:none;
+}
+#author li:before {
+	font-family:'FontAwesome';
+	padding-right:20px;
+	font-size:48px;
+}
+#author li.twitter:before {
+	content:'\f099';
+}
+#author li.github:before {
+	content:'\f09b';
+}
+#author li.stackoverflow:before {
+	content:'\f16c';
+}
+#author li.link:before {
+	content:'\f0c1';
+	font-size:40px;
 }
 
 #jargon li {

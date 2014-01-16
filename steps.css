@@ -130,7 +130,7 @@ ul li {
 #author ul {
 	margin-left:-30px;
 }
-#author li a { color: #777; }
+#author li a { text-decoration:none; }
 #author li {
 	list-style:none;
 }
@@ -141,9 +141,13 @@ ul li {
 }
 #author li.twitter:before {
 	content:'\f099';
+	position: relative;
+	top: 7px;
 }
 #author li.github:before {
 	content:'\f09b';
+	position: relative;
+	top: 7px;
 }
 #author li.stackoverflow:before {
 	content:'\f16c';

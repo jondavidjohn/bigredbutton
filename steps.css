@@ -76,10 +76,15 @@ ul li {
 	font-size:124px;
 	line-height:1em;
 }
+
 #credits {
 	border-top: solid 2px #e9463c;
 	border-bottom: solid 2px #e9463c;
 	text-align:center;
+}
+
+#credits a {
+	text-decoration:none;
 }
 
 #title h1 .article {
